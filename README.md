@@ -3,10 +3,8 @@
 Clone this repository:
 
 ```
-git clone ssh://git@source.olisti.co:6222/olistik/sidekiq-redis.git
+git clone https://source.olisti.co/olistik/sidekiq-redis.git
 ```
-
-This funny URL is due to the fact that this Gitlab instance doesn't use the standard SSH port. 🤷
 
 Install dependencies:
 
