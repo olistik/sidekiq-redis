@@ -38,7 +38,13 @@ bundle exec ruby consumers/blockchain.rb
 bundle exec ruby consumers/reactions.rb
 ```
 
-Now pump the events into the redis instance that is watched by the Sidekiq instance and see how the workers handles the batches and dispatch the events to the consumers by using Redis' PubSub.
+Now pump the events into the redis instance that is watched by the Sidekiq instance:
+
+```
+bundle exec ruby pump.rb
+```
+
+and see how the workers handles the batches and dispatch the events to the consumers by using Redis' PubSub.
 
 Note that consumers simply listen to one or more _topics_ each of those optionally specified with wildcards.
 
